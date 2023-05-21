@@ -1,0 +1,30 @@
+.main-nav{margin: 0; padding: 0}
+.main-nav ul li{ list-style: none; display: inline-block; margin: 10px}
+.content-section{width: 45%}
+.shop-items{ background: #d5d5d5; padding: 10px;}
+.shop-item{  padding: 10px; margin-bottom: 30px; background: #f1f1f1;}
+.band-name{font-size: 24px; text-align: center}
+.section-header{font-size: 24px; text-align: center}
+.shop-item-title{font-size: 16px; font-weight: bold}
+.shop-item-image{max-width: 100%; max-height: 150px; width: 100%; margin: auto}
+.shop-item-details{ padding: 5px; display: table;width: 100%}
+.shop-item-price{ display: table-cell;width: 45%; float: left}
+.shop-item-button{ display: table-cell;width: 45%; float:right}
+
+.content-section{margin: 30px auto}
+.cart-items{ padding: 15px;}
+.cart-row{display: table; margin-bottom: 20px; width: 100%}
+.cart-column{display: table-cell;padding: 5px; text-align: center;  width: auto}
+.cart-item  { background: #f5f5f5; padding: 5px;}
+.cart-item-image{max-width: 100%; margin: auto; width: 120px;}
+.cart-item-title{font-size: 16px; font-weight: bold; display: block}
+.chart-price {font-size: 16px; font-weight: bold}
+.cart-quantity {font-size: 16px; font-weight: bold;}
+.btn.btn-danger{background-color: #f00; color: #fff; float: right}
+.cart-quantity-input{border: 1px solid #ddd;width: 80px;}
+
+
+.cart-total{background-color: #f5f5f5;padding: 10px; font-size: 16px; font-weight: bold; display: table;width: 100%;}
+.cart-total-title{font-size: 16px; font-weight: bold;display: table-cell;}
+.cart-total-price{font-size: 16px; font-weight: bold;display: table-cell;}
+.btn.btn-primary.btn-purchase{background-color: #0a670a; color: #fff; float: right;margin: 20px 0}

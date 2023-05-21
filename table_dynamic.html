@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Table Dynamic</title>
+</head>
+<body>
+
+<h3>Table Dynamic</h3> 
+
+    <script type="text/javascript">
+        
+    window.onload = function(){
+        var myContacts = [
+          { "name": "Parvez Ansari", "email": "ansariparvez@gmai.com", "mobile":"9998979695" },
+          { "name": "Tayyeb Shaikh", "email": "tshaikh1981@gmai.com", "mobile":"9091929394" },
+          { "name": "Ashfaque Shaikh", "email": "ashly786@gmai.com", "mobile":"8081828384" }
+        ];
+        
+        var body = document.getElementsByTagName("body")[0];
+        
+        var tableM = document.createElement('table');
+        tableM.style.width = '50%';
+        tableM.setAttribute('border', '1');
+        tableM.setAttribute('cellspacing', '0');
+        tableM.setAttribute('cellpadding', '5');
+        
+        var tableB = document.createElement('tbody');
+        tableM.appendChild(tableB);
+        
+        var noOfContacts = myContacts.length;
+        var col = []; // define an empty array
+        	for (var i = 0; i < noOfContacts; i++) {
+				for (var key in myContacts[i]) {
+					if (col.indexOf(key) === -1) {
+						col.push(key);
+					}
+				}
+			}
+        var TableHead = document.createElement('thead');
+        var TablehRow = document.createElement("tr");
+         for(h=0; h<col.length; h++){
+              var tableTh = document.createElement('th');
+              TablehRow.appendChild(tableTh);
+              tableTh.innerHTML = col[h];
+         }
+        TableHead.appendChild(TablehRow);
+        tableM.appendChild(TableHead);
+        
+        for(i=0; i< noOfContacts; i++){
+            var tableTr = document.createElement('tr');
+            tableB.appendChild(tableTr);
+            
+            for(j=0; j< noOfContacts; j++){
+              var tableTd = document.createElement('th');
+              tableTr.appendChild(tableTd);
+                tableTd.innerHTML = myContacts[i][col[j]];;
+            }
+        }      
+        body.appendChild(tableM);
+    }
+    </script>
+</body>
+</html>
